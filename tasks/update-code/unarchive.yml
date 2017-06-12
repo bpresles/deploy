@@ -2,6 +2,8 @@
 - name: ANSISTRANO | Unarchive | Unarchive source
   unarchive:
     copy: no
+    owner: "{{ ansistrano_unarchive_owner }}"
+    group: "{{ ansistrano_unarchive_group }}"
     src: "{{ ansistrano_archived_file }}"
     dest: "{{ ansistrano_release_path.stdout }}"
 
