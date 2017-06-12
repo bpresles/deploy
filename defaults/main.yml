@@ -56,5 +56,5 @@ ansistrano_s3_region: eu-west-1
 ansistrano_allow_anonymous_stats: yes
 
 # Unarchive vars
-ansistrano_unarchive_owner: {{ ansible_user_id }}
-ansistrano_unarchive_group: {{ ansible_user_id }}
+ansistrano_unarchive_owner: "{{ ansible_user_id }}"
+ansistrano_unarchive_group: "{{ ansible_user_id }}"
